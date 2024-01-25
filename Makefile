@@ -6,7 +6,7 @@
 #    By: kali <kali@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 05:57:40 by asioud            #+#    #+#              #
-#    Updated: 2024/01/25 13:32:40 by kali             ###   ########.fr        #
+#    Updated: 2024/01/25 13:35:56 by kali             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,10 +53,6 @@ $(NAME)	 :	$(OBJ) # final compilation
 	@cd libft && make
 	@$(CC) $(CFLAGS)  $(OBJ) $(LIBFT) -o $(NAME)
 	@echo "$(B_GREEN)DONE"
-	@echo "\n$(B_RED)Use this link to generate numbers:"
-	@echo "$(U_BLUE)https://numbergenerator.org/randomnumbergenerator/lottery#!numbers=500&low=-2147483648&high=2147483647&unique=true&csv=&oddeven=&oddqty=0&sorted=false&addfilters=$(END_COLOR)"
-	@echo "\n$(B_RED)Go on :D $(B_BLUE)./push_swap \"2 0 3 1 5 4\"\n"
-
 
 $(OUTDIR)%.o:	$(INDIR)%.c $(HFILES)  # create obj files
 	@mkdir -p $(OUTDIR)
@@ -75,7 +71,6 @@ $(BNAME) :	$(OBJ_BNS)
 	@$(CC) $(CFLAGS)  $(OBJ_BNS) $(LIBFT) -o $(BNAME)
 	@echo "$(B_GREEN)BONUS DONE"
 	@echo "\n$(B_RED)Go on :D $(B_BLUE)./checker ARGS COMMANDS\n"
-
 
 
 leaks :

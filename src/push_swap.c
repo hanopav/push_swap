@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asioud <asioud@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 05:56:04 by asioud            #+#    #+#             */
-/*   Updated: 2023/01/22 08:09:33 by asioud           ###   ########.fr       */
+/*   Updated: 2024/01/25 13:45:11 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(int argc, char **argv)
 		free(numbers);
 		if (count == 1)
 			display_error("", 1);
-		display_error(RED"Error", 1);
+		display_error(RED"Error\n", 1);
 	}
 	init_stack(&stack_a, &stack_b, numbers, count);
 	sort(&stack_a, &stack_b, numbers, count);
